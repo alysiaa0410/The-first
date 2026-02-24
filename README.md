@@ -1,4 +1,4 @@
-## Neo-Mofox Bot Plugins
+
 
 这是一个为聊天型 Bot 设计的 **TypeScript 插件框架 + 常用插件集合**，同时预留了 Python 方向的扩展位，方便你在自己的仓库中直接使用或二次开发。
 
@@ -18,7 +18,6 @@
   - `ModelRouterPlugin`：根据内容（如是否含代码）路由到不同模型。
   - `LanguageDetectPlugin`：简单语言检测，并在 system prompt 中指定中/英文回答。
 
-> 你可以直接把这个项目初始化为 git 仓库，推到 GitHub，然后根据自己的 Neo-Mofox Bot 主程序进行集成。
 
 ### 目录结构
 
@@ -79,17 +78,5 @@ import {
 
 然后在请求进来时，组装 `PluginContext`、`ChatMessage` 列表，以及你自己的 `callLLM` 函数，调用 `PluginManager.handleMessage` 即可。
 
-### 推送到 GitHub 的步骤（Windows PowerShell）
 
-```bash
-cd g:\Cursor-Workerspace
-git init
-git add .
-git commit -m "init neo-mofox bot plugins"
-git branch -M main
-git remote add origin <你的 GitHub 仓库地址>
-git push -u origin main
-```
-
-完成以上步骤后，你就拥有了一个可以直接复用和继续扩展的插件仓库。
 

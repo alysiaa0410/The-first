@@ -1,0 +1,18 @@
+{
+  "name": "neo-mofox-bot-plugins",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plugin system and plugins for Neo-Mofox style chat bot (TypeScript framework, Python helpers).",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json",
+    "lint": "echo \"no linter configured yet\"",
+    "start": "node dist/example.js"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
